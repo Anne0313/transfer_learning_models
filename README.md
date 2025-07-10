@@ -99,7 +99,9 @@
 * **Clone this repository and set environment**
   ```
   git clone https://github.com/FujiangJi/transfer_learning_models.git
+  cd C:\Users\Ysy\transfer_learning_models #into
   conda env create -f environment.yml
+  notepad environment.yml #edit
   conda activate py37
   ```
 * **Leaf trait estimation**  
