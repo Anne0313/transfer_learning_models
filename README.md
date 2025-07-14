@@ -134,7 +134,7 @@ _Navigate to the directory **[src_code](src_code)** and execute the code in the 
   *  **_Fine-tune pre-trained DNN model:_** Fine-tune the pre-trined DNN models using different portion of observation data (10% - 80%).
       * Runing on the local PC:
         ```
-        python 4_fine_tune_DNN.py
+        python 4_fine_tune_DNN.py [tr] [data_type]
         ```
       * Runing on the high-performance computing (HPC) cluster (Linux OS): go to directory **[scripts](scripts)**
         ```
