@@ -106,7 +106,10 @@
   ```
 * **Leaf trait estimation**  
 _Navigate to the directory **[src_code](src_code)** and execute the code in the following steps after updating the input/output paths:_
-  * **_Construct Look-up Table:_** Based on PROSPECT and Leaf-SIP models to construct paired RTM synthetic reflectance and leaf traits.
+   ```
+  cd src_code
+  ```
+   * **_Construct Look-up Table:_** Based on PROSPECT and Leaf-SIP models to construct paired RTM synthetic reflectance and leaf traits.
     * Runing on the local PC:
       ```
       python 1_LUT_construction.py
@@ -133,7 +136,7 @@ _Navigate to the directory **[src_code](src_code)** and execute the code in the 
         ```
         sbatch 3_partial_obs_GPR_PLSR_bash.sh
         ```
-  *  **_Fine-tune pre-trained DNN model:_** Fine-tune the pre-trined DNN models using different portion of observation data (10% - 80%).
+  *  **_Fine-tune pre-trained DNN model:_** Fine-tune the pre-trined DNN models using different portion of observation data (10% - 80%) **_to test tne best portion_**,then use the best portion(80%) in transferability models.(!! Val and test is the same cannot show the reality)
       * Runing on the local PC:
         ```
         python 4_fine_tune_DNN.py
