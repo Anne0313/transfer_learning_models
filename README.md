@@ -92,7 +92,7 @@
 
 
 ## Requirements
-* Python 3.7.13 and more in **[environment.yml](environment.yml)**
+* Python 3.10 and more in **[environment.yml](environment.yml)**
 
 ### Usage
 
@@ -102,7 +102,7 @@
   cd C:\Users\Ysy\transfer_learning_models #into
   conda env create -f environment.yml
   notepad environment.yml #edit
-  conda activate py37
+  conda activate py310
   ```
 * **Leaf trait estimation**  
 _Navigate to the directory **[src_code](src_code)** and execute the code in the following steps after updating the input/output paths:_
