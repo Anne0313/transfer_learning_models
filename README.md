@@ -101,6 +101,7 @@
   git clone https://github.com/FujiangJi/transfer_learning_models.git
   cd C:\Users\Ysy\transfer_learning_models #into
   conda env create -f environment.yml
+  conda create -n py310 python=3.10
   notepad environment.yml #edit
   conda activate py310
   ```
